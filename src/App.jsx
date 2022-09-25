@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Card from './components/CustomerCard';
 import TradeIn from './components/TradeIn';
-
+import Form from './components/Form';
 function App() {
   const [content, setContent] = useState([
     {
@@ -44,8 +44,8 @@ function App() {
 
   return (
     <div className="bg-slate-200 fixed w-full h-full">
-
-  <TradeIn/>
+          <Form/>
+    {/*  <TradeIn/> */}
     {/*   <div className='mt-[30px] ml-[120px] font-semibold'><h3>OUR CUSTOMER FEEDBACK</h3></div>
        <div className='flex ml-[120px] gap-[18px] mt-[25px]'>
         {content.map((values) => (
