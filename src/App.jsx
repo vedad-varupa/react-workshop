@@ -4,10 +4,12 @@ import TradeIn from './components/TradeIn';
 import Form from './components/Form';
 import SideBarModal from './components/SideBarModal';
 import Modal from 'react-modal/lib/components/Modal';
+import Table from './components/Table';
+import MobileInfo from './components/MobileInfo';
 
 
 function App() {
-  const [content, setContent] = useState([
+  const content = [
     {
       rating: 4,
       title: "Title of post ",
@@ -44,10 +46,12 @@ function App() {
         color: "Pink"
       }
     }
-  ])
+  ]
   return (
-    <div className="bg-slate-100 fixed w-full h-full">
-      <SideBarModal/>
+    <div className="bg-orange-100 fixed w-full h-full">
+      <MobileInfo/>
+    {/*  <Table data={content}/>*/}
+     {/* <SideBarModal/>*/}
        {/*   <Form/> */}
     {/*  <TradeIn/> */}
     {/*   <div className='mt-[30px] ml-[120px] font-semibold'><h3>OUR CUSTOMER FEEDBACK</h3></div>
