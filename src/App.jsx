@@ -6,6 +6,7 @@ import SideBarModal from './components/SideBarModal';
 import Modal from 'react-modal/lib/components/Modal';
 import Table from './components/Table';
 import MobileInfo from './components/MobileInfo';
+import ImprovedMobileInfo from './components/ImprovedMobileInfo';
 
 
 function App() {
@@ -49,7 +50,8 @@ function App() {
   ]
   return (
     <div className="bg-orange-100 fixed w-full h-full">
-      <MobileInfo/>
+      <ImprovedMobileInfo/>
+     {/* <MobileInfo/> */}
     {/*  <Table data={content}/>*/}
      {/* <SideBarModal/>*/}
        {/*   <Form/> */}
